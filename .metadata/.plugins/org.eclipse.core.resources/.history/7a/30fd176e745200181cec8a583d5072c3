@@ -1,0 +1,5 @@
+package edu.mum.asd.flyweightpattern;
+
+public interface Flyweight {
+
+}

@@ -1,0 +1,8 @@
+package edu.mum.asd.designpattern.proxy.lab; 
+
+public interface IRow {
+
+	public int getheigt();
+
+	public int getwidth();
+}

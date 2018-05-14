@@ -1,0 +1,10 @@
+package edu.mum.asd.strategy;
+
+import java.util.List;
+
+public interface Model {
+	
+	public final double baseTicketPrice=300;
+	
+	public long getRevenue(List<Flight>flights);
+}

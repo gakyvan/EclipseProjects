@@ -1,0 +1,16 @@
+package demo.adapter;
+
+public class Client {
+
+	public static void main(String[] args) {
+		QueueTarget qt=new Adapter();
+		qt.enqueue("Yvan");
+		qt.enqueue("Ahmet");
+		qt.enqueue("Abiel");
+		qt.enqueue("Prakash");
+		qt.enqueue("Micheal");
+		qt.enqueue("Teme");
+		System.out.println(qt.dequeue());
+	}
+
+}

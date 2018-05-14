@@ -1,0 +1,27 @@
+package demo.adapter;
+
+public class Client {
+
+	public static void main(String[] args) {
+		QueueTarget qt=new Adapter();
+		qt.enqueue("Yvan");
+		qt.enqueue("Ahmet");
+		qt.enqueue("Abiel");
+		qt.enqueue("Prakash");
+		qt.enqueue("Micheal");
+		qt.enqueue("Teme");
+		System.out.println(qt.dequeue());
+		System.out.println(qt.dequeue());
+		
+		StackTarget st=new Adapter();
+		st.push("Yvan");
+		st.push("Ahmet");
+		st.push("Abiel");
+		st.push("Prakash");
+		st.push("Micheal");
+		st.push("Teme");
+		System.out.println(st.pop());
+		System.out.println(st.pop());
+	}
+
+}

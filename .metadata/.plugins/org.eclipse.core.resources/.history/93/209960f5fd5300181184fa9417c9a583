@@ -1,0 +1,5 @@
+package demo.proxy.example1;
+
+public class ProxyPatternClient {
+
+}

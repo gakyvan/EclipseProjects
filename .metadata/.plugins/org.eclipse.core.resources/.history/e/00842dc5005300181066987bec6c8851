@@ -1,0 +1,13 @@
+package edu.mum.asd.state;
+
+public class IceRoardState implements RoardState {
+
+	@Override
+	public void handle() {
+		System.out.println("LEFT -> 1");
+		System.out.println("ACCELERATION -> 3");
+		System.out.println("RIGHT -> 1");
+		System.out.println("BRAKE -> 2");
+	}
+
+}

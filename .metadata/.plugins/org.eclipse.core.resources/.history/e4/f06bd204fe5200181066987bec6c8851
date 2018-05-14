@@ -1,0 +1,11 @@
+package edu.mum.asd.state;
+
+public class IceRoardState implements RoardState {
+
+	@Override
+	public void handle() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

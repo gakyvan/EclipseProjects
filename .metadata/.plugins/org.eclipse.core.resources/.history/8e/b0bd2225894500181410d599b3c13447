@@ -1,0 +1,21 @@
+package cs544.project.volunteer.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import cs544.project.volunteer.service.GenerateSampleDATA;
+
+@Controller
+@RequestMapping(value="/project")
+public class ProjectController {
+
+	@Autowired
+	private GenerateSampleDATA temp;
+	
+	@RequestMapping(value="/addProject")
+	public String createProject() {
+		temp.addSampleProject();
+		return "projects";
+	}
+}

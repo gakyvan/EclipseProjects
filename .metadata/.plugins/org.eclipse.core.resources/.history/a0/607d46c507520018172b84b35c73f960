@@ -1,0 +1,36 @@
+package edu.mum.asd.designpattern.proxy;
+
+public class CommandExecutorProtectionProxy implements ICommandExecutor {
+
+	private boolean isAdmin;
+	private ICommandExecutor executor;
+	
+	public CommandExecutorProtectionProxy(String username, String pwd) {
+		if("username".equals(username) && "password".contains(pwd)) {
+			isAdmin=true;
+			executor=new CommandExecutor();
+		}
+	}
+
+	@Override
+	public void runCommand(String cmd) throws Exception {
+		if(isAdmin) {
+			executor.runCommand(cmd);
+		}else {
+			if(cmd.trim().equals("del")) {
+				throw new Exception("Delete is not allowed for user for non-admin users");
+			}else {
+				executor.runCommand(cmd);
+			}
+		}
+	}
+
+	public boolean isAdmin() {
+		return isAdmin;
+	}
+
+	public ICommandExecutor getExecutor() {
+		return executor;
+	}
+
+}

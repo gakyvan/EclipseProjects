@@ -1,0 +1,12 @@
+package demo.proxy.example1;
+
+public class ProxyPatternClient {
+	public static void main(String[] args) {
+		ProxyCommandImplementor pci = new ProxyCommandImplementor("ygakuba@mum.edu", "#password@");
+		try {
+			pci.runCommand("cmd /B dir");
+		}catch(Exception e) {
+			e.getMessage();
+		}
+	}
+}

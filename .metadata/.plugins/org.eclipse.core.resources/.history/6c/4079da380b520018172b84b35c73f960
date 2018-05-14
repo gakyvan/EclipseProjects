@@ -1,0 +1,30 @@
+package asdw1d5_2_Best;
+
+public class Client {
+	
+	public static void main(String[] args){
+		Address address = new Address();
+		GiftPack.PackType packType= GiftPack.PackType.BUSINESS;
+		GiftPack giftPack= new GiftPack(address, packType);
+		ICustomerFactory factory= null;
+		switch (packType){
+		case BUSINESS:
+		factory= new BussinessCustomerFactoryImpl();
+		break;
+		
+		case ADULTS:
+			factory = new AdultsCustomerFactoryImpl();
+			break;
+		case KIDS:
+			factory = new KidsCustomerFactoryImpl();
+			break;
+			
+	}
+		giftPack.addItem(factory.getGiftItem(PackageType.BAG));
+		giftPack.addItem(factory.getGiftItem(PackageType.BOX));
+		giftPack.addItem(factory.getGiftItem(PackageType.WRAP));
+		System.out.println(giftPack);
+		System.out.println(giftPack.getTotal());
+		
+	}
+}

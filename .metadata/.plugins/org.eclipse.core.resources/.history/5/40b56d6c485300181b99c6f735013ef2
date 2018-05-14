@@ -1,0 +1,50 @@
+package demo.adapter;
+
+public class Adapter implements QueueTarget, StackTarget {
+
+	private Adaptee adaptee;
+	
+	public Adapter() {
+		adaptee=new Adaptee();
+	}
+	
+	@Override
+	public void push(String value) {
+		adaptee.addValue(value);
+	} 
+
+	@Override
+	public String pop() {
+		String value=adaptee.endString();
+		adaptee.removeValue(adaptee.getEnd());
+		return value;
+	}
+
+	@Override
+	public String peek() {
+		return adaptee.endString();
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return true;
+	}
+
+	@Override
+	public boolean isFull() {
+		return adaptee.isFull();
+	}
+
+	@Override
+	public void enqueue(String value) {
+		adaptee.addValue(value);
+	}
+
+	@Override
+	public String dequeue() {
+		String value=adaptee.startString();
+		adaptee.removeValue(adaptee.getStart());
+		return value;
+	}
+
+}

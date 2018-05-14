@@ -1,0 +1,20 @@
+package edu.mum.asd.state;
+
+public abstract class AbstractRoardState implements RoardState {
+
+	protected int left;
+	protected int acceleration;
+	protected int right;
+	protected int brake;
+	
+	public AbstractRoardState() {}
+	
+	public AbstractRoardState(int left, int acceleration, int right, int brake) {
+		this.left=left;
+		this.acceleration=acceleration;
+		this.right=right;
+		this.brake=brake;
+	}
+	
+	
+}

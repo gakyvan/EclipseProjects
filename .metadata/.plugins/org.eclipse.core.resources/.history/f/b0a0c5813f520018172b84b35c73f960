@@ -1,0 +1,13 @@
+package edu.mum.asd.builderpattern;
+
+public interface RequestBuilder {
+	
+	public void openingInfoBuilder(int agentID, String phoneNumber);
+	
+	public void contentInfoBuilder();
+	
+	public void closingInfoBuilder();
+	
+	public Request getRequest();
+
+}

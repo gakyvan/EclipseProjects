@@ -1,0 +1,31 @@
+package edu.mum.asd.builderpattern;
+
+public class RequestPartBuilder implements RequestBuilder {
+
+	private Request request;
+
+	@Override
+	public void openingInfoBuilder(Call call, String phoneNumber) {
+		request=new Request();
+		request.setReqId(call.getRequestID());
+		request.setAgent(call.getAgent());
+	}
+
+	@Override
+	public void contentInfoBuilder() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void closingInfoBuilder() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Request getRequest() {
+		return request;
+	}
+
+}

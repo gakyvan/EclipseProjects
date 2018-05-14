@@ -1,0 +1,11 @@
+package edu.mum.asd.state;
+
+public class GravelRoardState implements RoardState {
+
+	@Override
+	public void handle() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

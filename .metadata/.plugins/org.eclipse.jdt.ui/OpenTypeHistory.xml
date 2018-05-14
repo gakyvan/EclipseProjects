@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=ASD/src&lt;com.asd.designpattern.proxy{ICommandExecutor.java[ICommandExecutor" modifiers="513" timestamp="1525208523622"/>
+<typeInfo handle="=ASD/src&lt;com.asd.designpattern.proxy.lab{IRow.java[IRow" modifiers="513" timestamp="1525230707162"/>
+<typeInfo handle="=ASD/src&lt;com.asd.designpattern.proxy.lab{ITable.java[ITable" modifiers="513" timestamp="1525226340306"/>
+<typeInfo handle="=ASD/src&lt;com.asd.designpattern.templatemethod{IOrder.java[IOrder" modifiers="513" timestamp="1525295551752"/>
+<typeInfo handle="=UdemyDesignPatterns/src&lt;udemy.designpattern.command{Command.java[Command" modifiers="513" timestamp="1525576401685"/>
+<typeInfo handle="=ASD/src&lt;com.asd.designpattern.command{Command.java[Command" modifiers="513" timestamp="1525637102897"/>
+<typeInfo handle="=ASD_Assignments_week2/src&lt;edu.mum.asd.builderpattern{RequestBuilder.java[RequestBuilder" modifiers="513" timestamp="1525730432451"/>
+<typeInfo handle="=DesignPattern/src&lt;demo.adapter{QueueTarget.java[QueueTarget" modifiers="513" timestamp="1525843310728"/>
+<typeInfo handle="=DesignPattern/src&lt;demo.adapter{StackTarget.java[StackTarget" modifiers="513" timestamp="1525841622229"/>
+<typeInfo handle="=DesignPattern/src&lt;demo.proxy.example1{ICommand.java[ICommand" modifiers="513" timestamp="1525882961091"/>
+<typeInfo handle="=ASD_Assignments_week2/src&lt;edu.mum.asd.strategy{Model.java[Model" modifiers="513" timestamp="1526011112946"/>
+</typeInfoHistroy>

@@ -1,0 +1,47 @@
+package demo.adapter;
+
+public class Adapter implements QueueTarget, StackTarget {
+
+	@Override
+	public void push(String value) {
+		// TODO Auto-generated method stub
+
+	} 
+
+	@Override
+	public String pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean isFull() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void enqueue(String value) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void dequeue() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

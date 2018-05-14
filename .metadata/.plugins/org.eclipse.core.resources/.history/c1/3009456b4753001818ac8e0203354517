@@ -1,0 +1,13 @@
+package demo.adapter;
+
+public interface QueueTarget {
+
+	public void enqueue(String value);
+	
+	public void dequeue();
+	
+	public void isEmpty();
+	
+	public void isFull();
+	
+}

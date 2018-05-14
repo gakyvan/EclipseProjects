@@ -1,0 +1,13 @@
+package edu.mum.asd.state;
+
+public class GravelRoardState implements RoardState {
+
+	@Override
+	public void handle() {
+		System.out.println("LEFT -> 3");
+		System.out.println("ACCELERATION -> 7");
+		System.out.println("RIGHT -> 3");
+		System.out.println("BRAKE -> 6");
+	}
+
+}

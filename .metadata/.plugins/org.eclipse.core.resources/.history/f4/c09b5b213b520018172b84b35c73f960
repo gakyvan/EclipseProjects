@@ -1,0 +1,11 @@
+package edu.mum.asd.builderpattern;
+
+public interface RequestBuilder {
+	
+	public void openingInfoBuilder();
+	
+	public void contentInfoBuilder();
+	
+	public void closingInfoBuilder();
+
+}

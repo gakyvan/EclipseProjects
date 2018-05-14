@@ -1,0 +1,13 @@
+package edu.mum.asd.state;
+
+public class WetRoardState implements RoardState {
+
+	@Override
+	public void handle() {
+		System.out.println("LEFT -> 4");
+		System.out.println("ACCELERATION -> 9");
+		System.out.println("RIGHT -> 4");
+		System.out.println("BRAKE -> 7");
+	}
+
+}

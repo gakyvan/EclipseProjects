@@ -1,0 +1,13 @@
+package demo.proxy.example1;
+
+public class ProxyPatternClient {
+	public static void main(String[] args) {
+		ProxyCommandImplementor pci = new ProxyCommandImplementor("ygakuba@mum.edu", "#password@");
+		try {
+			pci.runCommand("ls -ltr");
+			//pci.runCommand(" rm -rf abc.pdf");
+		}catch(Exception e) {
+			e.getMessage();
+		}
+	}
+}

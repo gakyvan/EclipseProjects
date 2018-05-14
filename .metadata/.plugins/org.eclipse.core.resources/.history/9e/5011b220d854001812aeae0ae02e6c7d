@@ -1,0 +1,11 @@
+package edu.mum.asd.strategy;
+
+public class StategyClient {
+
+	public static void main(String[]args) {
+		Model singlePrice=new SinglePrice();
+		RevenueCalculatorContext rcc=new RevenueCalculatorContext();
+		rcc.setModel(singlePrice);
+		System.out.printf("Single Price Model Total Revenue $%,.2f", rcc.computeTotalRevenue(Flight.getFlights()));
+	}
+}

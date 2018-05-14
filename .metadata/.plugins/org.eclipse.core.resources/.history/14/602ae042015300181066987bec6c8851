@@ -1,0 +1,13 @@
+package edu.mum.asd.state;
+
+public class RegularRoadState implements RoardState {
+
+	@Override
+	public void handle() {
+		System.out.println("LEFT -> 5");
+		System.out.println("ACCELERATION -> 9");
+		System.out.println("RIGHT -> 5");
+		System.out.println("BRAKE -> 8");
+	}
+
+}

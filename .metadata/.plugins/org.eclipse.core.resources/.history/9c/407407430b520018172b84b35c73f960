@@ -1,0 +1,6 @@
+package edu.mum.asd.designpattern.abstractfactoryl;
+
+public interface ICustomerFactory {
+	GiftItem getGiftItem(PackageType type);
+
+}
